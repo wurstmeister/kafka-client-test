@@ -5,7 +5,7 @@ Temporary test project for validating kafka 0.8.3 client for apache storm
 Dependencies: 
 
 - docker compose 
-- boot2docker (if you run docker natively update KAFKA_ADVERTISED_HOST_NAME and KAFKA_ZOOKEEPER_CONNECT properties
+- boot2docker (if you run docker natively update KAFKA_ADVERTISED_HOST_NAME and KAFKA_ZOOKEEPER_CONNECT properties in the docker compose yml files)
 - https://raw.githubusercontent.com/wurstmeister/kafka-docker/master/start-kafka-shell.sh
 - Kafka dev image built with: https://github.com/wurstmeister/kafka-docker/blob/dev/Dockerfile (available on docker hub)
 
