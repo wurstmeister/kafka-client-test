@@ -12,12 +12,7 @@ Dependencies:
 
 #Common setup for tests:
 
-```docker-compose -f zk.yml up -d```
-
-```docker-compose -f broker-1.yml up -d```
-
-```docker-compose -f broker-2.yml up -d```
-
+```./prepare.sh```
 
 ```start-kafka-shell.sh 192.168.59.103 192.168.59.103:49181```
 
@@ -27,9 +22,7 @@ Dependencies:
 
 #Test cleanup:
 
-```docker-compose stop```
-
-```docker-compose rm```
+```./cleanup.sh```
 
 
 #Test case 1 (Per topic subscription):

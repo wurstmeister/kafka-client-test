@@ -35,8 +35,8 @@ public class TestCase {
         List<PartitionInfo> partitionInfos = consumer.partitionsFor("topic");
 
         if (mode.equals(Mode.PER_PARTITION) ) {
-            for (int i = 0; i < partitionInfos.size(); i++) {
-                TopicPartition partition = new TopicPartition(topic, i);
+            for (PartitionInfo partitionInfo : partitionInfos) {
+                TopicPartition partition = new TopicPartition(topic, partitionInfo.partition());
                 consumer.subscribe(partition);
             }
         } else {
