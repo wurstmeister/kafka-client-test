@@ -10,7 +10,7 @@ Dependencies:
 - Kafka dev image built with: https://github.com/wurstmeister/kafka-docker/blob/dev/Dockerfile (available on docker hub)
 
 
-Common setup for tests:
+#Common setup for tests:
 
 ```docker-compose -f zk.yml up -d```
 
@@ -25,7 +25,7 @@ Common setup for tests:
 
 ```$KAFKA_HOME/bin/kafka-topics.sh --describe --topic topic --zookeeper $ZK```
 
-Test cleanup:
+#Test cleanup:
 
 ```docker-compose stop```
 
