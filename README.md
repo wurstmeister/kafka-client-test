@@ -12,17 +12,14 @@ Dependencies:
 
 #Common setup for tests:
 
-```./prepare.sh```
-
-```start-kafka-shell.sh 192.168.59.103 192.168.59.103:49181```
-
-```$KAFKA_HOME/bin/kafka-topics.sh --create --topic topic --partitions 2 --zookeeper $ZK --replication-factor 2```
-
-```$KAFKA_HOME/bin/kafka-topics.sh --describe --topic topic --zookeeper $ZK```
+- ```./prepare.sh```
+- ```start-kafka-shell.sh 192.168.59.103 192.168.59.103:49181```
+- ```$KAFKA_HOME/bin/kafka-topics.sh --create --topic topic --partitions 2 --zookeeper $ZK --replication-factor 2```
+- ```$KAFKA_HOME/bin/kafka-topics.sh --describe --topic topic --zookeeper $ZK```
 
 #Test cleanup:
 
-```./cleanup.sh```
+- ```./cleanup.sh```
 
 
 #Test case 1 (Per topic subscription):
