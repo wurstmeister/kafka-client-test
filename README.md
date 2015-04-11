@@ -32,7 +32,7 @@ Test cleanup:
 ```docker-compose rm```
 
 
-Test case 1 (Per topic subscription):
+#Test case 1 (Per topic subscription):
 
 ```java -jar target/kafka-client-test-1.0-SNAPSHOT-jar-with-dependencies.jar TOPIC```
 
@@ -66,7 +66,7 @@ New leader will be identified
 --> OK
 
 
-Test case 2 (per partition subscription):
+#Test case 2 (Per partition subscription):
 
 ```java -jar target/kafka-client-test-1.0-SNAPSHOT-jar-with-dependencies.jar PER_PARTITION```
 
