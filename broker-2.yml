@@ -1,0 +1,10 @@
+kafka2:
+  image: wurstmeister/kafka:dev
+  ports:
+    - "49094:9092"
+  environment:
+    KAFKA_ADVERTISED_HOST_NAME: 192.168.59.103
+    KAFKA_ZOOKEEPER_CONNECT: 192.168.59.103:49181
+    KAFKA_BROKER_ID: 2
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock

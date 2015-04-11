@@ -1,0 +1,4 @@
+zookeeper:
+  image: wurstmeister/zookeeper
+  ports: 
+    - "49181:2181"
